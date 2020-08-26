@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">卷卷通</string>
+
+    <string name="search_team">搜商品</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="tabs_telephone">
+        <item>话费回收</item>
+        <item>话费充值</item>
+    </string-array>
+
+    <string-array name="tariff_transaction">
+        <item>电费充值</item>
+        <item>电费回收</item>
+    </string-array>
+
+
+    <string-array name="tabs_order">
+        <item>全部订单</item>
+        <item>待支付</item>
+        <item>待确定</item>
+        <item>已支付</item>
+        <item>已完成</item>
+        <item>售后中</item>
+
+    </string-array>
+
+    <string name="login_send_code">发送验证码</string>
+    <string name="login_empty_phone">手机号码不能为空!</string>
+    <string name="login_error_phone">请输入正确的手机号码</string>
+    <string name="please_correct_phone">请填写正确的手机号!</string>
+    <string name="send_success">发送成功</string>
+    <string name="login_empty_code">验证码不能为空！</string>
+    <string name="loading">请稍候…</string>
+    <string name="endprice">结算价:%1$s元</string>
+    <string name="price">售价:%1$s元</string>
+    <string name="send_price">%1$s元</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+
+    <string name="num">数量:%1$s</string>
+
+    <string name="Total">%1$s 元</string>
+    <string name="Denomination">面额：%1$s</string>
+    <string name="Order_date">下单日期：%1$s</string>
+    <string name="prices">￥%1$s</string>
+    <string name="Originalprice">原价%1$s</string>
+    <string name="reward">所获奖励：%1$s</string>
+    <string name="invation_sum">邀请总数:%1$s人</string>
+
+    <string name="stock">库存:%1$s</string>
+</resources>

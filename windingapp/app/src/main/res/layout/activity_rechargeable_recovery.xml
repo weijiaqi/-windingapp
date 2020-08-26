@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="app.winding.com.windingapp.ui.RechargeableRecoveryActivity">
+
+
+    <include layout="@layout/common_basetwo" />
+
+    <include layout="@layout/linetwo_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_54">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:text="卡类"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_14" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/Cardclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView42"
+                    android:layout_alignBottom="@+id/textView42"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="73dp"
+                    android:layout_toEndOf="@+id/textView42"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_c8" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_54">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:text="卡种"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_14" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/CardType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/text2"
+                    android:layout_alignBottom="@+id/text2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="73dp"
+                    android:layout_toEndOf="@+id/text2"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_c8" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcycard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="@color/color_f4" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_54">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:text="卡号"
+
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/cardone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_24"
+                    android:layout_toEndOf="@+id/textView43"
+                    android:background="@null"
+                    android:hint="请输入卡号"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_54">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:text="密码"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/pwdone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_23"
+                    android:layout_toEndOf="@+id/textView44"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_layout" />
+
+
+            <LinearLayout
+                android:id="@+id/llcardtwo"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_5"
+                    android:background="@color/color_f4" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_54">
+
+                    <TextView
+
+                        android:id="@+id/card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:text="卡号"
+                        android:textColor="@color/color_1f"
+                        android:textSize="@dimen/sp_14" />
+
+                    <EditText
+                        android:id="@+id/cardtwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/dp_24"
+                        android:layout_toEndOf="@+id/card2"
+                        android:background="@null"
+                        android:layout_marginEnd="@dimen/dp_50"
+                        android:hint="请输入卡号"
+                        android:textSize="@dimen/sp_12" />
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/card2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="@mipmap/delete"
+                        android:textColor="@color/color_ff0" />
+                </RelativeLayout>
+
+                <include layout="@layout/line_layout" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_54">
+
+                    <TextView
+                        android:id="@+id/pwd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:text="密码"
+                        android:textColor="@color/color_1f"
+                        android:textSize="@dimen/sp_14" />
+
+                    <EditText
+                        android:id="@+id/pwdtwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/dp_23"
+                        android:layout_toEndOf="@+id/pwd2"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:hint="请输入密码"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+
+                <include layout="@layout/line_layout" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lladd_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_11"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:src="@mipmap/addcode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:text="增加更多"
+                    android:layout_marginLeft="@dimen/dp_23"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cofimOrder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignStart="@+id/code"
+                android:layout_below="@+id/code"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_13"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@mipmap/cofimlogin"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

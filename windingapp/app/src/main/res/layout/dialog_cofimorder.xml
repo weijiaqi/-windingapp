@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/baksuccessorder"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_220"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:text="您 的 订 单 已 生 成！"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:layout_marginRight="@dimen/dp_32"
+            android:layout_marginTop="@dimen/dp_25"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:text="后台人工审核2小时内会审核！有疑问
+请咨询客服电话。" />
+
+        <TextView
+            android:id="@+id/btn_click"
+            android:layout_width="@dimen/dp_206"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/bg_ffborder"
+            android:gravity="center"
+            android:text="我知道啦"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_16" />
+
+    </LinearLayout>
+
+</FrameLayout>

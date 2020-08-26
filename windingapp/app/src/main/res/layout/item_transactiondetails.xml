@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_18"
+        android:text="帮忙代购APPLE XS白色一部.."
+        android:textColor="#101010"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="代下任务"
+        android:textColor="#868686"
+        android:textSize="@dimen/sp_9" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_17"
+        android:text="-7069.06"
+        android:textColor="#101010"
+        android:textSize="@dimen/sp_16"
+        android:id="@+id/price" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/type"
+        android:layout_alignBottom="@+id/type"
+        android:layout_alignEnd="@+id/price"
+        android:text="2019-03-28"
+        android:textColor="#868686"
+        android:textSize="@dimen/sp_8" />
+</RelativeLayout>

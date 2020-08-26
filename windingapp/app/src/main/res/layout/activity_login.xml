@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbak"
+    android:orientation="vertical"
+    tools:context="app.winding.com.windingapp.activity.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_210"
+        android:background="@mipmap/textbak"
+        android:hint="请输入11位手机号码"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/dp_15"
+        android:textColorHint="@color/color_8f"
+        android:textSize="@dimen/sp_12" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@mipmap/txtbak"
+        android:hint="请输入验证码"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/dp_15"
+        android:textColorHint="@color/color_8f"
+        android:textSize="@dimen/sp_12"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_marginRight="@dimen/dp_8" />
+
+    <TextView
+        android:id="@+id/getcode"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignEnd="@+id/phone"
+        android:layout_alignTop="@+id/code"
+        android:background="@mipmap/getcode"
+        android:gravity="center"
+        android:text="发送验证码"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/white"
+        android:layout_alignRight="@+id/phone" />
+
+
+    <EditText
+        android:id="@+id/Invitationcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/code"
+        android:layout_alignStart="@+id/code"
+        android:layout_below="@+id/getcode"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@mipmap/txtbak"
+        android:hint="邀请码(选填)"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/dp_15"
+        android:textColorHint="@color/color_8f"
+        android:textSize="@dimen/sp_12" />
+
+
+    <TextView
+        android:id="@+id/cofimlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Invitationcode"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@mipmap/cofimlogin"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="确认登录"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_140"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bitmaplogo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pic"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/pic"
+            android:text=""
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text=""
+            android:textColor="@color/color_86"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+
+            android:id="@+id/Presentprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pic"
+            android:layout_alignStart="@+id/textView16"
+            android:text=""
+            android:textColor="@color/color_ff"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/Originalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Presentprice"
+            android:layout_alignBottom="@+id/Presentprice"
+            android:layout_toEndOf="@+id/Presentprice"
+            android:text=""
+            android:layout_marginLeft="@dimen/dp_8"
+            android:textColor="@color/color_86"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/Upper_shelf"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_20"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_below="@+id/Presentprice"
+            android:layout_marginEnd="9dp"
+            android:background="@mipmap/releaseborder"
+            android:gravity="center"
+            android:text="下架"
+            android:textColor="@color/color_86"
+            android:textSize="@dimen/sp_10" />
+
+
+    </RelativeLayout>
+</LinearLayout>

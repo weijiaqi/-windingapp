@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.winding.com.windingapp.ui.AfterSaleTreatmentActivity">
+
+    <include layout="@layout/common_base" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_11"
+            android:text="COSTA咖啡抵扣券"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text="武汉 所有门店适用"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dp_75">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="申请充值异常"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/recharge_anomaly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_ffborder"
+            android:padding="@dimen/dp_8"
+            android:textSize="@dimen/sp_10"
+            android:text="确认申请充值异常"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlupdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_75"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/sweepcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Update"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:src="@mipmap/uploadpic" />
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="更新凭证"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/textView30"
+            android:layout_alignBottom="@+id/textView30"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textView30"
+            android:background="@null"
+            android:gravity="bottom"
+            android:hint="请上传凭证截图"
+            android:textColorHint="@color/color_c8"
+            android:textSize="@dimen/sp_12" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@mipmap/cofimlogin"
+        android:gravity="center"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15" />
+</LinearLayout>

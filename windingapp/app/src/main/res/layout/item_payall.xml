@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_107"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/titlename"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginStart="11dp"
+            android:src="@mipmap/buy" />
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="话费"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"
+            android:text=""
+            android:textColor="@color/color_ff"
+            android:textSize="@dimen/sp_10"
+            android:id="@+id/status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_below="@+id/titlename"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_toEndOf="@+id/pic"
+            android:text="话费买单-12365623362"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            android:id="@+id/detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/detail"
+            android:layout_below="@+id/detail"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text=""
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/color_86"
+            android:id="@+id/Denomination" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_alignStart="@+id/Denomination"
+            android:layout_below="@+id/Denomination"
+            android:textSize="@dimen/sp_10"
+            android:text="下单日期：2019-01-2616 :04"
+            android:textColor="@color/color_86" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/status"
+            android:layout_below="@+id/titlename"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text=""
+            android:id="@+id/price" />
+
+        <TextView
+            android:id="@+id/selectdetails"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignEnd="@+id/price"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textSize="@dimen/sp_10"
+            android:background="@mipmap/backbold"
+            android:textColor="@color/color_ff" />
+    </RelativeLayout>
+</LinearLayout>

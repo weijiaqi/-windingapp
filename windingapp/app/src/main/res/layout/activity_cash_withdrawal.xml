@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="app.winding.com.windingapp.ui.CashWithdrawalActivity">
+
+    <include layout="@layout/common_base" />
+
+    <include layout="@layout/linetwo_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_196"
+        android:background="@mipmap/cash"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="账户余额将提现到支付宝"
+            android:textColor="#7C838D"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/writewithdrawals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_37"
+            android:hint="输入提现金额"
+            android:background="@null"
+            android:numeric="decimal"
+            android:textColor="#121922"
+            android:textSize="@dimen/sp_20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_19"
+            android:background="#E4E4EE" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Withdrawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text=""
+                android:textColor="#7C838D"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/Withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Withdrawable"
+                android:layout_alignBottom="@+id/Withdrawable"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:text="提现记录"
+                android:textColor="#FE454E"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:lineSpacingExtra="@dimen/dp_5"
+        />
+    <TextView
+        android:id="@+id/Immediate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginRight="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_17"
+        android:background="@mipmap/redbold"
+        android:gravity="center"
+        android:text="立即提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

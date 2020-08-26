@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_base" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@mipmap/search_team"
+        android:drawableLeft="@mipmap/searchs"
+        android:drawablePadding="@dimen/dp_8"
+        android:hint="快速查找城市"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_10"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/color_999"
+        android:textSize="@dimen/dp_12" />
+
+    <TextView
+        android:id="@+id/remen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="热门搜索"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_13" />
+
+    <LinearLayout
+        android:id="@+id/select_china"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/rcyPopular"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rltwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <app.winding.com.windingapp.util.code.SideBar
+            android:id="@+id/side"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:letterColor="#3660D0"
+            app:letterSize="12sp"
+            app:selectColor="#f01401" />
+
+        <TextView
+            android:id="@+id/tv_letter"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_24"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcyhot"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

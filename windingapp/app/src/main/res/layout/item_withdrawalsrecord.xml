@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_12"
+            android:text="提现中"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_14" />
+
+
+        <TextView
+            android:id="@+id/Cashwithdrawal"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/status"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="13dp"
+            android:text="2569.30"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Cashwithdrawal"
+            android:layout_below="@+id/status"
+            android:text="2019-03-28 23:56:23"
+            android:textColor="#868686"
+            android:textSize="@dimen/sp_9" />
+    </RelativeLayout>
+</LinearLayout>
